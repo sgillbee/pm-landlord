@@ -1,15 +1,11 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import * as React from 'react';
+import { Container, Typography } from '@mui/material';
 
-import NxWelcome from './nx-welcome';
-
-export function App() {
+export const App:React.FC = () => {
   return (
-    <>
-      <NxWelcome title="pm-landlord" />
-
-      <div />
-    </>
+    <Container>
+      <Typography variant="h1">Purple Martin Landlord</Typography>
+    </Container>
   );
 }
 
